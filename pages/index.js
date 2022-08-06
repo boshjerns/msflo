@@ -166,7 +166,7 @@ export default function Home() {
                             <button className={styles.mathButton} onClick={incrementMintAmount}>+</button>
                         </div>
                         <p>EACH LOST ONE COSTS .02 ETH per MINT</p>
-                        {!loading && <button onClick={handleMint} className={styles.MintButton}  disabled={!provider}>Claim</button>}
+                        {!loading && <button onClick={handleMint} className={styles.MintButton}  disabled={!provider}>Mint</button>}
                         {loading && <button className={styles.MintButtonDisabled} disabled>...Minting...</button>}
                         <p className={styles.SupplyText}>{totalSupply}/2222</p>
                     </div>
